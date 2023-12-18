@@ -112,6 +112,6 @@ public class Test {
                 count++;
             }
         }
-        System.out.println("The count of string is::"+count);
+        System.out.println("The total count of string is::"+count);
     }
 }
