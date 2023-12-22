@@ -1,14 +1,22 @@
 import java.net.SocketOption;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.LinkedList;
-import java.util.List;
+import java.util.*;
 
 public class PRACTICEcollection {
     public static void main(String[] args) {
         List<Integer> num= new ArrayList<>();
         List<Integer> num1= new ArrayList<>();
         List<Integer> link1= new LinkedList<>();
+        List<Integer> vec1= new Vector<>();
+        Stack<Integer> st1= new Stack<>();
+        st1.push(2);
+        st1.push(3);
+        vec1.add(2);
+        vec1.add(0,5);
+        num1.addAll(vec1);
+        vec1.addAll(link1);
+        System.out.println("Vector list is empty::"+vec1.isEmpty());
+        //Collections.sort(vec1);
+        Collections.sort(vec1, Collections.reverseOrder());
         link1.add(0,-1);
         link1.add(1,2);
         link1.add(2,3);
@@ -40,6 +48,7 @@ public class PRACTICEcollection {
         System.out.println(num);
         System.out.println(num1);
         System.out.println(link1);
-
+        System.out.println(vec1);
+        System.out.println(st1);
     }
 }
