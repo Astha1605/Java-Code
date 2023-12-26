@@ -64,4 +64,26 @@ public class HeapPractice {
         }
         System.out.println("the kth max element is::" +pq.poll());
     }
+    public int lastStoneWeight(int[] stones) {
+        PriorityQueue<Integer> pq = new PriorityQueue<>(Collections.reverseOrder());
+        pq.add(0);
+        for(int i=0; i<stones.length; i++)
+        {
+            pq.add(stones[i]);
+        }
+        while(pq.size()>2)
+        {
+            int y= pq.poll();
+            int x=pq.poll();
+            if(x==y)
+            {
+                continue;
+            }
+            else if(y>x)
+            {
+                pq.add(y-x);
+            }
+        }
+        return pq.poll();
+    }
 }
