@@ -34,8 +34,8 @@ public class PRACTICEcollection {
         Collections.sort((link1));
         num1.add(6);
         num1.add(5);
-        num.add(1);
-        num.add(6);
+        num.addFirst(1);
+        num.addLast(6);
         num.size();
         num.addAll(num);
         num.add(2,9);
@@ -50,5 +50,36 @@ public class PRACTICEcollection {
         System.out.println(link1);
         System.out.println(vec1);
         System.out.println(st1);
+        List<String> result = getData3(7);
+        System.out.println(result);
     }
+
+    static List<String> getData(int x)
+    {
+        List<String> result = new ArrayList<>();
+        for(int i=0;i<x;i++)
+        {
+            result.add(String.valueOf(i));
+        }
+        return result;
+    }
+    static List<String> getData2(int x)
+    {
+        List<String> result = new LinkedList<>();
+        for(int i=0;i<x;i++)
+        {
+            result.add(String.valueOf(i));
+        }
+        return result;
+    }
+    static List<String> getData3(int x)
+    {
+        List<String> result = new Stack<>();
+        for(int i=0;i<x;i++)
+        {
+            result.add(String.valueOf(i));
+        }
+        return result;
+    }
+
 }
