@@ -86,4 +86,17 @@ public class HeapPractice {
         }
         return pq.poll();
     }
+    public int[] getConcatenation(int[] nums) {
+        int ar[]= new int[2*nums.length];
+        for(int i=0; i<2*nums.length; i++)
+        {
+            if(i<nums.length){
+                ar[i]=nums[i];
+            }
+            else{
+                ar[i]=nums[i-(nums.length)];
+            }
+        }
+        return ar;
+    }
 }
