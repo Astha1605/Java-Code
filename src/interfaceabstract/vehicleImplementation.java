@@ -12,9 +12,4 @@ public class vehicleImplementation extends vehicle{
     void printEngineType() {
         System.out.println("printEngineType");
     }
-    @Override
-    void vehicleInformation()
-    {
-        System.out.println("Vehicle details");
-    }
 }

@@ -1,12 +1,16 @@
 public class Test {
+    static int x;
     public static void main(String[] args) {
 
         String st= "Astha Singh Astha Astha astha";
-        int x='c';
+        //int x;
        // charSum(st);
         //namePrint2(st);
         //countChar(st);
-        stringCount(st);
+        x=5;
+        x= x<<1;
+        System.out.println(x);
+
     }
 
     static void secondLargest(int ar[]) {
